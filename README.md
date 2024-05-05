@@ -9,7 +9,6 @@
 ## Preview
 
 [![Resume Preview](preview.jpg)](https://lebryere.github.io/Keleti-kuria/)
-[![Resume Preview](preview-2.jpg)](https://lebryere.github.io/Keleti-kuria/)
 
 **[View Live Preview](https://lebryere.github.io/Keleti-kuria/)**
 
