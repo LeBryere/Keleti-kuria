@@ -3000,7 +3000,7 @@ Copyright (c) 2015 Daniel Eden
 .video_popup .controller .leb__video_container button {
   position: relative;
   width: 3rem;
-  padding-top: 0.3rem;
+  /* padding-top: 0.3rem; */
   color: #fff;
   background-color: transparent;
   border: none;
@@ -3018,7 +3018,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .video_popup .controller .leb__video_container .filter-color {
-  width: calc(0.8vw + 12px);
+  width: calc(0.8vw + 10px);
   filter: invert(1);
 }
 
