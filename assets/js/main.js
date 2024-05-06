@@ -532,24 +532,21 @@ closeButton.addEventListener("click", () => {
 });
 
 pauseButton.addEventListener("click", () => {
-   vid.paused ? (vid.play(), pauseButton.innerHTML = "Pause", pauseButton.style.color = "var(--design-500)") : (vid.pause(), pauseButton.innerHTML = "Play ", pauseButton.style.color = "#fff")
+   vid.paused ? (vid.play(), pauseButton.innerHTML = "<img src='assets/images/icons/pause.png' alt='Pause' class='filter-color' />", pauseButton.style.color = "var(--design-500)") : (vid.pause(), pauseButton.innerHTML = "<img src='assets/images/icons/play.png' alt='Play' class='filter-color'/>", pauseButton.style.color = "#fff")
 });
 
 muteButton.addEventListener("click", () => {
    vid.muted = !vid.muted;
 
    if (vid.muted) {
-      muteButton.innerHTML = "Sound"
-      muteButton.style.backgroundColor = "transparent";
-      muteButton.style.color = "var(--design-500)";
+      muteButton.innerHTML = "<img src='assets/images/icons/sound.png' alt='Sound' class='filter-color' />";
    } else {
-      muteButton.innerHTML = "Mute"
-      muteButton.style.color = "#fff";
+      muteButton.innerHTML = "<img src='assets/images/icons/mute.png' alt='Mute' class='filter-color' />";
    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-   (window.matchMedia("(orientation: landscape)").matches) ? lebVid.style.top = "3rem" : lebVid.style.top = "inherit";
+   (window.matchMedia("(orientation: landscape)").matches) ? lebVid.style.top = ".5rem" : lebVid.style.top = "inherit";
 
    fullscreenButton.addEventListener("click", () => {
       vid.requestFullscreen ? vid.requestFullscreen() :
@@ -559,7 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    window.addEventListener("orientationchange", () => {
-      window.matchMedia("(orientation: landscape)").matches ? lebVid.style.top = "auto" : lebVid.style.top = "3rem";
+      window.matchMedia("(orientation: landscape)").matches ? lebVid.style.top = "auto" : lebVid.style.top = ".5rem";
    });
 });
 
